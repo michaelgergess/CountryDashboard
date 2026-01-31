@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="14.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="10.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="10.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Scalar.AspNetCore" Version="2.12.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application\CountryDashboard.Application\CountryDashboard.Application.csproj" />
+    <ProjectReference Include="..\..\Domain\CountryDashboard.Domain\CountryDashboard.Domain.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\CountryDashboard.Authentication\CountryDashboard.Authentication.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\CountryDashboard.Caching\CountryDashboard.Caching.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\CountryDashboard.Integrations\CountryDashboard.Integrations.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\CountryDashboard.Persistence\CountryDashboard.Persistence.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\CountryDashboard.RequestContext\CountryDashboard.RequestContext.csproj" />
+  </ItemGroup>
+
+</Project>

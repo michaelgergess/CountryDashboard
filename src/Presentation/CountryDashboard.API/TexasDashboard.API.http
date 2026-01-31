@@ -1,0 +1,6 @@
+@TexasDashboard.API_HostAddress = http://localhost:5132
+
+GET {{TexasDashboard.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

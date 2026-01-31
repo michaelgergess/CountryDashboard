@@ -1,0 +1,20 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/Application/">
+    <Project Path="src/Application/CountryDashboard.Application/CountryDashboard.Application.csproj" />
+  </Folder>
+  <Folder Name="/src/Domain/">
+    <Project Path="src/Domain/CountryDashboard.Domain/CountryDashboard.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/Infrastructure/">
+    <Project Path="src/Infrastructure/CountryDashboard.Authentication/CountryDashboard.Authentication.csproj" />
+    <Project Path="src/Infrastructure/CountryDashboard.Caching/CountryDashboard.Caching.csproj" />
+    <Project Path="src/Infrastructure/CountryDashboard.Integrations/CountryDashboard.Integrations.csproj" />
+    <Project Path="src/Infrastructure/CountryDashboard.Persistence/CountryDashboard.Persistence.csproj" />
+    <Project Path="src/Infrastructure/CountryDashboard.RequestContext/CountryDashboard.RequestContext.csproj" />
+  </Folder>
+  <Folder Name="/src/Presentation/">
+    <Project Path="src/Presentation/CountryDashboard.API/CountryDashboard.API.csproj" />
+  </Folder>
+  <Folder Name="/tst/" />
+</Solution>
