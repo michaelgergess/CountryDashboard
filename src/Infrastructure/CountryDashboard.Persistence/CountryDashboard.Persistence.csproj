@@ -16,4 +16,8 @@
     <ProjectReference Include="..\..\Application\CountryDashboard.Application\CountryDashboard.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Configurations\" />
+  </ItemGroup>
+
 </Project>
