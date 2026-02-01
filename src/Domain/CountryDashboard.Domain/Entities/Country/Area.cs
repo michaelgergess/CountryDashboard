@@ -3,9 +3,11 @@
 using System;
 using System.Collections.Generic;
 
+using CountryDashboard.Domain.Common;
+
 namespace CountryDashboard.Domain.Entities.Country;
 
-public partial class Area
+public partial class Area : BaseEntity
 {
     public int Id { get; set; }
 
@@ -21,13 +23,7 @@ public partial class Area
 
     public string Integrationkey { get; set; }
 
-    public DateTime CreatedDate { get; set; }
 
-    public int CreatedBy { get; set; }
-
-    public DateTime? ModifiedDate { get; set; }
-
-    public int? ModifiedBy { get; set; }
 
     public bool IsDeleted { get; set; }
 

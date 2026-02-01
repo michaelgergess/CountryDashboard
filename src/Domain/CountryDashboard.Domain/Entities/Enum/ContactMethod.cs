@@ -3,9 +3,11 @@
 using System;
 using System.Collections.Generic;
 
+using CountryDashboard.Domain.Common;
+
 namespace CountryDashboard.Domain.Entities.Enum;
 
-public partial class ContactMethod
+public partial class ContactMethod : BaseEntity
 {
     public int Id { get; set; }
 
@@ -17,13 +19,7 @@ public partial class ContactMethod
 
     public string NameUnique { get; set; }
 
-    public DateTime CreatedDate { get; set; }
 
-    public int CreatedBy { get; set; }
-
-    public DateTime? ModifiedDate { get; set; }
-
-    public int? ModifiedBy { get; set; }
 
     public bool IsDeleted { get; set; }
 

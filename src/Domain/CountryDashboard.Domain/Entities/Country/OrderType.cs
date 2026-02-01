@@ -3,9 +3,11 @@
 using System;
 using System.Collections.Generic;
 
+using CountryDashboard.Domain.Common;
+
 namespace CountryDashboard.Domain.Entities.Country;
 
-public partial class OrderType
+public partial class OrderType : BaseEntity
 {
     public int Id { get; set; }
 
@@ -50,16 +52,6 @@ public partial class OrderType
     public double? MinOrderValueForDiscount { get; set; }
 
     public string IntegrationKey { get; set; }
-
-    public DateTime CreatedDate { get; set; }
-
-    public int CreatedBy { get; set; }
-
-    public DateTime? ModifiedDate { get; set; }
-
-    public int? ModifiedBy { get; set; }
-
-    public bool IsDeleted { get; set; }
 
     public int? MigrationId { get; set; }
 

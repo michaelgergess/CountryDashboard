@@ -2,24 +2,17 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using CountryDashboard.Domain.Common;
 
 namespace CountryDashboard.Domain.Entities.Country;
 
-public partial class PaymentRequestSource
+public partial class PaymentRequestSource : BaseEntity
 {
     public int PaymentId { get; set; }
 
     public string RequestSource { get; set; }
 
     public string DeviceModel { get; set; }
-
-    public DateTime CreatedDate { get; set; }
-
-    public int CreatedBy { get; set; }
-
-    public DateTime? ModifiedDate { get; set; }
-
-    public int? ModifiedBy { get; set; }
 
     public bool IsDeleted { get; set; }
 

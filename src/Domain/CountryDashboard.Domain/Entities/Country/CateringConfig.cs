@@ -3,9 +3,11 @@
 using System;
 using System.Collections.Generic;
 
+using CountryDashboard.Domain.Common;
+
 namespace CountryDashboard.Domain.Entities.Country;
 
-public partial class CateringConfig
+public partial class CateringConfig : BaseEntity
 {
     public int? CountryId { get; set; }
 
@@ -16,14 +18,6 @@ public partial class CateringConfig
     public int MinOrderHours { get; set; }
 
     public int MaxOrderHours { get; set; }
-
-    public DateTime CreatedDate { get; set; }
-
-    public int CreatedBy { get; set; }
-
-    public DateTime? ModifiedDate { get; set; }
-
-    public int? ModifiedBy { get; set; }
 
     public bool IsDeleted { get; set; }
 

@@ -1,7 +1,9 @@
 
+using CountryDashboard.Application.Common.Interfaces.Auth;
+
 namespace CountryDashboard.Persistence.Interceptors
 {
-    public class AuditInterceptor(/*ITokenInfo tokenInfo*/) : SaveChangesInterceptor
+    public class AuditInterceptor(ITokenInfo tokenInfo) : SaveChangesInterceptor
     {
         //private readonly ITokenInfo _tokenInfo = tokenInfo;
 
@@ -27,7 +29,7 @@ namespace CountryDashboard.Persistence.Interceptors
             if (context == null) return;
 
             var now = DateTime.UtcNow;
-            var currentUser = 0; /*_tokenInfo.UserId;*/
+            var currentUser = tokenInfo.UserId;
 
             foreach (var entry in context.ChangeTracker.Entries())
             {

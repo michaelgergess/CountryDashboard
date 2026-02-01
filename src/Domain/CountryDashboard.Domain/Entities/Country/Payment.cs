@@ -3,9 +3,11 @@
 using System;
 using System.Collections.Generic;
 
+using CountryDashboard.Domain.Common;
+
 namespace CountryDashboard.Domain.Entities.Country;
 
-public partial class Payment
+public partial class Payment : BaseEntity
 {
     public int Id { get; set; }
 
@@ -47,13 +49,7 @@ public partial class Payment
 
     public string IntegrationKey { get; set; }
 
-    public DateTime CreatedDate { get; set; }
 
-    public int CreatedBy { get; set; }
-
-    public DateTime? ModifiedDate { get; set; }
-
-    public int? ModifiedBy { get; set; }
 
     public bool IsDeleted { get; set; }
 

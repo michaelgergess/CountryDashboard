@@ -3,9 +3,11 @@
 using System;
 using System.Collections.Generic;
 
+using CountryDashboard.Domain.Common;
+
 namespace CountryDashboard.Domain.Entities.Country;
 
-public partial class OrderStatus
+public partial class OrderStatus : BaseEntity
 {
     public int Id { get; set; }
 
@@ -39,15 +41,7 @@ public partial class OrderStatus
 
     public bool IsDeleted { get; set; }
 
-    public int? MigrationId { get; set; }
 
-    public int? CreatedBy { get; set; }
-
-    public DateTime? CreatedDate { get; set; }
-
-    public int? ModifiedBy { get; set; }
-
-    public DateTime? ModifiedDate { get; set; }
 
     public virtual Country Country { get; set; }
 }

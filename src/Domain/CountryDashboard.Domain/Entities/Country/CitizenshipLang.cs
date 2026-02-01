@@ -3,9 +3,11 @@
 using System;
 using System.Collections.Generic;
 
+using CountryDashboard.Domain.Common;
+
 namespace CountryDashboard.Domain.Entities.Country;
 
-public partial class CitizenshipLang
+public partial class CitizenshipLang : BaseEntity
 {
     public int CitizenshipId { get; set; }
 
@@ -13,13 +15,7 @@ public partial class CitizenshipLang
 
     public string Name { get; set; }
 
-    public DateTime CreationDate { get; set; }
 
-    public int CreationBy { get; set; }
-
-    public DateTime? LastModificationDate { get; set; }
-
-    public int? Modifiedby { get; set; }
 
     public int? MigrationId { get; set; }
 }
